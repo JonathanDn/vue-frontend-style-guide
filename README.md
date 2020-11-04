@@ -1,6 +1,16 @@
 # Frontend Style Guide
 This guide is here to set common and recommended baselines to code conventions and best practices that will save time, help maintain focus and increase dev efficiency overall.
 
+## Architecture
+* 
+
+## Project Sturcture
+* divison of `src` to `frontend` and `backend`?
+* Where we put `components` at what structure, what hirearchy.
+* Where do we put `shared styles`
+* Where do we put `shared logic` like `util` or `services` or `vue components` that are shared like a Shared UI folder(based on a design system)
+* When to divide to `.scss` file (After certain amount of lines of code) 
+
 ## Naming
 * File names should be in `kebab-case.vue` format - for `vue files` and `scss files`
 
