@@ -17,6 +17,7 @@ This guide is here to set common and recommended baselines to code conventions a
 ## Logic (Vue)
 * `custom events` should be written in `camelCase` format both when declared(emitted) and when listend to in the template.
 * Initting variables in the `data` method in a vue component should be done with the `null` value. (**NOT** using `undefined` as it collides with JS defauls occasionally)
+* When writing components keep in mind the difference between `smart` and `dumb` components or `logic-handling` and `plane views`(non logic-handling) components.
 
 ## Template (HTML)
 * When your html tag has `3 attributes` that is the time to open new lines and stack them vertically instead of horizontally.
