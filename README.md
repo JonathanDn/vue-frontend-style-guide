@@ -4,6 +4,10 @@ This guide is here to set common and recommended baselines to code conventions a
 ## Architecture
 * 
 
+## Principals
+* Separation of Concerns - aspire to keep it at all times. Logic should be in `<script>...` section and not in the `<template>...` same goes for `scss`
+* 
+
 ## Project Sturcture
 * divison of `src` to `frontend` and `backend`?
 * Where we put `components` at what structure, what hirearchy.
