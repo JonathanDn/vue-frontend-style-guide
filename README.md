@@ -1,4 +1,4 @@
-# Vue Stack Frontend Style Guide
+# Vue Frontend Style Guide
 This guide is here to set common and recommended baselines to code conventions and best practices that will save time, help maintain focus and increase dev efficiency overall.
 
 ## Naming
