@@ -6,7 +6,7 @@ This guide is here to set common and recommended baselines to code conventions a
 
 ## Vue
 * `custom events` should be written in `camelCase` format both when declared(emitted) and when listend to in the template.
-* 
+* Initting variables in the `data` method in a vue component should be done with the `undefined` value.
 
 ## CSS
 * Write `CSS Variables` for any piece of shared `colors` `layouts` `sizes  and `mixins` at the global scope, or for shared
