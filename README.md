@@ -10,7 +10,6 @@ This guide is here to set common and recommended baselines to code conventions a
 
 ## CSS
 * Work with `scss` preprocessor, the main reason is to use `nested classes`, by getting use to writing nested classes in every component the HTML DOM tree is inflicted in the scss you are writing.
-
 (That helps in orientation and in - getting to where you need to add / change more code blazing fast. `scss variables` help with things `css variables` do not yet support like using variables in `media queries`)
 * Write `SCSS Variables` for any piece of shared `colors` `layouts` `sizes  and `mixins` at the global scope, or for shared
 usage within a component and its descendents write the variables in that parent component.
