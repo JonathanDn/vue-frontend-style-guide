@@ -2,7 +2,8 @@
 This guide is here to set common and recommended baselines to code conventions and best practices that will save time, help maintain focus and increase dev efficiency overall.
 
 ## Architecture
-* 
+* (Add diagram of our desired architecutre here)
+* `services` `store` `logic handling component` `plane views` `global state` `local state`
 
 ## Principals
 * Separation of Concerns - aspire to keep it at all times. Logic should be in `<script>...` section and not in the `<template>...` same goes for `scss`
