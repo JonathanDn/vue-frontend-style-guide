@@ -21,7 +21,7 @@ This guide is here to set common and recommended baselines to code conventions a
 
 ## Vue.js
 
-### data binding and custom events
+### Data Binding and Custom Events
 * `custom events` should be written in `camelCase` format both when declared(emitted) and when listend to in the template.
 * When in need of a passing a reacctive property to a `custom component` prefer using `v-model="myReactivePropFromParent"` like so:
 ```
