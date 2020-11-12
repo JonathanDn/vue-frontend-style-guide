@@ -19,9 +19,35 @@ This guide is here to set common and recommended baselines to code conventions a
 ## Naming
 * File names should be in `kebab-case.vue` format - for `vue files` and `scss files`
 
-## Logic (Vue)
+## Vue.js
+
+### data binding and custom events
 * `custom events` should be written in `camelCase` format both when declared(emitted) and when listend to in the template.
+* When in need of a passing a reacctive property to a `custom component` prefer using `v-model="myReactivePropFromParent"` like so:
+```
+<MyCustomComponent v-model="myReactivePropFromParent" />
+```
+
+And then use the default `input` event to emit the change to the `myReactivePropFromParent` from the child component like so:
+```
+props: {
+  value: {
+    type: String
+  }
+},
+methods: {
+  someMethodThatIsInvokedOnSomeTriggerOfChild() {
+    this.$emit('input', this.value);
+  }
+}
+```
+And that is it, the parent component's property `myReactivePropFromParent` is now reactive and will respond to changed in `someMethodThatIsInvokedOnSomeTriggerOfChild`.
+* In Summary: The above is a faster and less biolerplate way to achieve `v-bind` and `v-on` with all the redundant setters - useful syntax sugar.
+* In the majority of the cases this approach would serve us. But in rarer more complex occasions consider using an other vue [model](https://vuejs.org/v2/api/#model) that gives more customization for custom prop names, custom event names.
+
+### Init Data
 * Initting variables in the `data` method in a vue component should be done with the `null` value. (**NOT** using `undefined` as it collides with JS defauls occasionally)
+### Separate Logic and Views
 * When writing components keep in mind the difference between `smart` and `dumb` components or `logic-handling` and `plane views`(non logic-handling) components.
 
 ## Template (HTML)
