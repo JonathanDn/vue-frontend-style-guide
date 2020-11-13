@@ -53,7 +53,24 @@ And that is it, the parent component's property `myReactivePropFromParent` is no
 ## Template (HTML)
 * When your html tag has `3 attributes` that is the time to open new lines and stack them vertically instead of horizontally.
 
-## Styling (SCSS)
+## Styling (CSS / SCSS / Both)
+
+## CSS
+* Using `CSS Variables`:
+- If a certain value of a size/color/other repeats itself. 
+- Consider writing color pallettes, groups of sizes in a certain location at the top part of your file
+- Consider dividing your `shared` `styles` to `layout` `mixins` `common` `utility` and any other shared logic category that makes sense to you.
+* Use `CSS Utility Classes`- such as `clickable` that will provide `cursor: pointer` and maybe also `user-select:none`. Mapping out your prevalnt utility classes can save a whole lot of time on development and keeps your code DRY(dont repeat yourself), prefer using them when you can.
+* When writing `CSS Classes` write just the specific class you want to modify without the previous hirearchy of classes. It is an appraoch that helps keep flexibility and speed. If you reach a point that you begin to experience or expect to experience class collissions within a component - well, that is a good time to breakdown your component to sub-components :) and keep your code more modular. Like so:
+```
+.some-parent-class {...}
+
+.some-child-class {...}
+
+.some-grand-child-class {...}
+```
+
+## SCSS
 * Work with `scss` preprocessor, the main reason is to use `nested classes`, by getting use to writing nested classes in every component the HTML DOM tree is inflicted in the scss you are writing.(That helps in orientation and in - getting to where you need to add / change more code blazing fast. `scss variables` help with things `css variables` do not yet support like using variables in `media queries`)
 * Write `SCSS Variables` for any piece of shared `colors` `layouts` `sizes  and `mixins` at the global scope, or for shared
 usage within a component and its descendents write the variables in that parent component.
